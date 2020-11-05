@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  postgresql:
+    image: postgres:latest
+    container_name: postgresql
+    hostname: postgresql
+    restart: on-failure
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=client
+      - POSTGRES_PASSWORD=P@55w0rd
+
+#  mobile-server:
+#    build: .
+#    container_name: mobile-server
+#    image: mobile-server:latest
+#    links:
+#      - postgresql
