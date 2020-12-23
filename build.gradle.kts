@@ -10,7 +10,6 @@ buildscript {
 plugins {
     id("io.spring.dependency-management") version "1.0.10.RELEASE"
     id("org.springframework.boot") version "2.3.4.RELEASE"
-    id("org.flywaydb.flyway") version "7.0.2"
     kotlin("jvm") version "1.3.72"
     kotlin("plugin.spring") version "1.3.72"
     kotlin("plugin.jpa") version "1.3.72"
@@ -41,7 +40,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation("org.flywaydb:flyway-core")
     implementation("org.postgresql:postgresql:42.2.5")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")

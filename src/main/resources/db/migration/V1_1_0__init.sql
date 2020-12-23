@@ -1,7 +1,4 @@
-CREATE SCHEMA IF NOT EXISTS mobile_server;
-SET search_path TO mobile_server;
-
-CREATE TABLE input
+CREATE TABLE input_3
 (
     id                uuid          NOT NULL,
     user_id           text         NOT NULL,

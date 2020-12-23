@@ -6,7 +6,7 @@ import java.util.*
 import javax.persistence.*
 
 @Entity
-@Table(name = "input", schema = "mobile_server")
+@Table(name = "input_3")
 class Input(
         @Id
         @GeneratedValue(generator = "UUID")
